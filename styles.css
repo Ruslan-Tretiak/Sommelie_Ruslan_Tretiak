@@ -1,0 +1,262 @@
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul,
+ol {
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+button {
+    cursor: pointer;
+}
+.list {
+    list-style: none;
+}
+.link {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+body {
+    font-family: 'Anziano', serif;
+    color: #2A2829;
+    background-color: #E0E0DB;
+}
+
+.page-header {
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    /* background: rgba(255, 255, 255, 0.8); */
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-items li {
+    margin-right: 20px;
+}
+
+.nav-items li a {
+    text-decoration: none;
+    color: #253551;
+    font-family: 'Minerva Modern', serif;
+    font-weight: 700;
+}
+
+.logo {
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+}
+
+.social-icons a {
+    margin-left: 10px;
+    color: #253551;
+    text-decoration: none;
+    font-family: 'Minerva Modern', serif;
+    font-weight: 700;
+}
+
+.hero {
+    background: url('file-Mn47BHH21qQBvAJCYbLoCpKJ.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 150px 20px;
+}
+
+.hero .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 3em;
+    font-family: 'Minerva Modern', serif;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    font-family: 'Minerva Modern', serif;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.contact-info {
+    margin-top: 20px;
+}
+
+.contact-info a {
+    color: #FFFFFF;
+    display: block;
+    margin-top: 10px;
+}
+
+.about {
+    background: url('file-3gIb5Cmq3kWWPnFMgvQEnTi6.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+    text-align: left;
+    padding: 100px 20px;
+}
+
+.about .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.about h3 {
+    font-family: 'Minerva Modern', serif;
+    text-align: left;
+}
+
+.about-text {
+    text-align: right;
+}
+
+.about .btn {
+    display: block;
+    margin: 20px 0;
+    background: #b22222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.subscribe-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    flex: 1;
+}
+
+.subscribe-form button {
+    padding: 10px;
+    border: none;
+    background: #b22222;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+
+.social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #FFFFFF;
+    margin: 0 10px;
+}
+
+.tastings {
+    background: url('file-i5o4cpO5RZyhj3EHpf3mKDba.jpg') no-repeat center center;
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 150px 20px;
+}
+
+.tastings .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.tastings h1 {
+    font-family: 'Minerva Modern', serif;
+    text-align: center;
+}
+
+.tasting {
+    margin-top: 40px;
+}
+
+.tasting h2 {
+    font-family: 'Minerva Modern', serif;
+}
+
+.btn {
+    background: #b22222;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #8b0000;
+}
