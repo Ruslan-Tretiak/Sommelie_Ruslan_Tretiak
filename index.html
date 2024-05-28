@@ -4,50 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruslan Tretiak - Sommelier</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Minerva+Modern:wght@400;700&family=Anziano:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Minerva+Modern:wght@400;700&family=Anziano:wght@400;700&display=swap" rel="stylesheet"> -->
 </head>
 <body>
     <!-- --------------------HEADER---------------------------- -->
     <header class="page-header">
-        <div class="page-header-container container">
+        <div class="page-header-container">
             <nav class="nav-page">
                 <ul class="nav-items">
-                    <li><a href="tastings.html">TASTINGS</a></li>
-                    <li><a href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                    <li><a class="nav-link link" href="tastings.html">TASTINGS</a></li>
+                    <li><a class="nav-link link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
                 </ul>
-                <div class="logo-container">
-                    <a href="index.html"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
+                <a href="index.html" class="logo-container"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
                 </div>
             </nav>
         </div>
-        <div class="social-icons container">
-            <a href="https://facebook.com" target="_blank">
-                <svg class="" width="24" height="24">
-                    <use href="./image/sprite.svg#icon-facebook"></use>
-                </svg>
-            </a>
-            <a href="https://youtube.com" target="_blank">
-                <svg class="" width="24" height="24">
-                    <use href="./image/sprite.svg#icon-youtube"></use>
-                </svg>
-            </a>
-            <a href="https://instagram.com" target="_blank">
-                <svg class="" width="24" height="24">
-                    <use href="./image/sprite.svg#icon-instagram"></use>
-                </svg>
-            </a>
-        </div>
     </header>
     
-    
+    <!-- --------------------HERO---------------------------- -->
 
     <section class="hero">
-        <div class="container">
+        <div class="hero-container">
             <h1>SOMMELIER</h1>
             <h2>RUSLAN TRETIAK</h2>
-            <p>Join Ruslan Tretiak on an exquisite wine journey, where each glass tells a story. With over 10 years of experience in the wine industry, Ruslan expertly guides you through a world of flavors and aromas, bringing a touch of humor and countless wine tips to every tasting. Discover hidden gems and elevate your wine appreciation with a master sommelier who blends knowledge with passion.</p>
-            <p>Experience wine like never before with Ruslan Tretiak.</p>
+            <div class="under_hero_text">
+                <p>Come and join a relaxed wine journey where each glass has its own story. With over 10 years in the wine industry, I'll guide you through a variety of flavors and aromas, adding a touch of humor and practical wine tips. Wine is simple, and there won't be any promotions—just pure enjoyment and discovery of hidden gems.</p>
+                <p>Experience wine like never before with Ruslan Tretiak.</p>
+            </div>
             <div class="contact-info">
                 <a href="https://goo.gl/maps/sykkylvsvegen125" target="_blank">Sykkylvsvegen 125, 6230 Sykkylven NÆRINGSFABRIKKEN</a>
                 <a href="mailto:theruslantretiak@gmail.com">09861183 | theruslantretiak@gmail.com</a>
