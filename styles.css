@@ -144,11 +144,11 @@ body {
 .hero-container {
     padding-bottom: 188px;
     padding-top: 120px;
-    width: 1440px;
+    width: 1420px;
 }
 
 .hero-text-wrapper {
-    background: rgba(25, 25, 25, 0.7); /* Темно-сірий фон з прозорістю */
+    background: rgba(25, 25, 25, 0.5); /* Темно-сірий фон з прозорістю */
     padding: 20px;
     border-radius: 10px; /* Додати округлені кути */
 }
