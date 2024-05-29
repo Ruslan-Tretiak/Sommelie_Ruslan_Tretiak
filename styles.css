@@ -142,134 +142,181 @@ body {
 
 .hero-container {
     padding-bottom: 188px;
-    padding-top: 150px;
+    padding-top: 120px;
+    width: auto;
 }
 
-.hero h1 {
-    font-size: 2.5em; /* Виправлено коми на крапки */
+.hero-text-prof {
+    font-size: 3.5em; /* Виправлено коми на крапки */
     font-family: 'Italiana', sans-serif;
 }
 
-.hero h2 {
+.hero-text-name {
     font-size: 10.5em; /* Зменшено розмір шрифту для зручного розміщення */
     font-family: 'Italiana', sans-serif;
     margin-top: 0;
 }
 
-.hero p {
+.under_hero_text {
+    max-width: 800px;
+    margin: 0 auto;
     font-size: 1.2em;
     line-height: 1.6;
 }
 
-.under_hero_text {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
 .contact-info {
-    margin-top: 20px;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 120px;
+}
+.location {
+    width: 250px;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
 }
 
 .contact-info a {
     color: #FFFFFF;
-    display: block;
     margin-top: 10px;
+    text-decoration: none;
 }
+
+
+
+
+
+/* ...............ABOUT....................... */
 
 .about {
-    background: url('file-3gIb5Cmq3kWWPnFMgvQEnTi6.jpg') no-repeat center center;
-    background-size: cover;
-    color: #FFFFFF;
+    background-color: #ffffff;
+    padding: 60px 20px;
     text-align: left;
-    padding: 100px 20px;
+    position: relative;
 }
-
-.about .container {
-    max-width: 800px;
+.about-container {
+    max-width: 1200px;
     margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
+    padding: 0 20px;
 }
-
-.about h3 {
-    font-family: 'Minerva Modern', serif;
-    text-align: left;
+.about-title {
+    font-family: 'Italiana', serif;
+    font-size: 2.5em;
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-50%);
+    margin: 0;
 }
 
 .about-text {
-    text-align: right;
+    font-family: 'MinervaModern', serif;
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 60px; /* Додано відступ зверху для правильного розміщення */
 }
 
-.about .btn {
-    display: block;
-    margin: 20px 0;
-    background: #b22222;
-    color: #fff;
+.btn {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #ffffff;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
 }
+
+.btn:hover {
+    background-color: #005bb5;
+}
+
+.support-btn {
+    display: block;
+    width: fit-content;
+    margin: 40px auto 0;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
 
 .subscribe-form {
     display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
 .subscribe-form input[type="email"] {
     padding: 10px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 5px 0 0 5px;
     flex: 1;
+    max-width: 300px;
 }
 
 .subscribe-form button {
     padding: 10px;
     border: none;
-    background: #b22222;
+    background-color: #0073e6;
     color: #fff;
     border-radius: 0 5px 5px 0;
+    cursor: pointer;
 }
 
-.tastings {
-    background: url('file-i5o4cpO5RZyhj3EHpf3mKDba.jpg') no-repeat center center;
-    background-size: cover;
-    color: #FFFFFF;
-    padding: 150px 20px;
+.subscribe-form button:hover {
+    background-color: #005bb5;
 }
 
-.tastings .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.tastings h1 {
-    font-family: 'Minerva Modern', serif;
-    text-align: center;
-}
-
-.tasting {
-    margin-top: 40px;
-}
-
-.tasting h2 {
-    font-family: 'Minerva Modern', serif;
-}
-
-.btn {
-    background: #b22222;
+.footer {
+    background-color: #252525; /* темний фон для футера */
     color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 5px;
-    display: inline-block;
-    text-align: center;
-    margin-top: 20px;
+    padding: 40px 20px;
 }
 
-.btn:hover {
-    background: #8b0000;
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #0073e6;
 }

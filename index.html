@@ -48,33 +48,73 @@
 
     <section class="hero">
         <div class="hero-container">
-            <h1>SOMMELIER</h1>
-            <h2>RUSLAN TRETIAK</h2>
+            <h1 class="hero-text-prof">SOMMELIER</h1>
+            <h2 class="hero-text-name">RUSLAN TRETIAK</h2>
             <div class="under_hero_text">
                 <p>Come and join a relaxed wine journey where each glass has its own story. With over 10 years in the wine industry, I'll guide you through a variety of flavors and aromas, adding a touch of humor and practical wine tips. Wine is simple, and there won't be any promotions—just pure enjoyment and discovery of hidden gems.</p>
                 <p>Experience wine like never before with Ruslan Tretiak.</p>
             </div>
             <div class="contact-info">
-                <a href="https://goo.gl/maps/sykkylvsvegen125" target="_blank">Sykkylvsvegen 125, 6230 Sykkylven NÆRINGSFABRIKKEN</a>
-                <a href="mailto:theruslantretiak@gmail.com">09861183 | theruslantretiak@gmail.com</a>
+                <a class="location" href="https://goo.gl/maps/sykkylvsvegen125" target="_blank">Sykkylvsvegen 125, 6230 Sykkylven NÆRINGSFABRIKKEN</a>
+                <div class="contacts">
+                    <a href="mailto:theruslantretiak@gmail.com">theruslantretiak@gmail.com</a>
+                    <a href="tel:09861183">09861183</a>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- --------------------ABOUT---------------------------- -->
+
     <section class="about">
-        <div class="container">
-            <h3>MAKE IT STAND OUT.</h3>
+        <div class="about-container container">
+            <h3 class="about-title">MAKE IT STAND OUT.</h3>
             <p class="about-text">IT ALL BEGAN MORE THAN 10 YEARS AGO WHEN, AS A BARTENDER, I DISCOVERED MY PASSION FOR WINE. OVER THE YEARS, I WORKED IN VARIOUS ROLES WITHIN THE WINE INDUSTRY. I HAD THE OPPORTUNITY TO WORK AT A VINEYARD IN PORTUGAL AND CREATED WINE COURSES. HOWEVER, MY TRUE JOY HAS ALWAYS COME FROM HOSTING WINE TASTINGS. UNFORTUNATELY, THE RUSSIAN INVASION FORCED ME AND MY FAMILY TO LEAVE OUR COUNTRY AND START ANEW. YET, MY PASSION FOR WINE HAS REMAINED UNWAVERING. JOIN ME ON AN EXCITING WINE JOURNEY THAT BRINGS FLAVORS AND STORIES FROM AROUND THE WORLD DIRECTLY TO YOUR GLASS.</p>
-            <a href="https://u24.gov.ua/uk" class="btn">Support Ukraine</a>
-            <form action="subscribe.php" method="POST" class="subscribe-form">
-                <input type="email" name="email" placeholder="Enter your email" required>
-                <button type="submit">Subscribe</button>
-            </form>
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://youtube.com" target="_blank">YouTube</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
+            <a href="https://u24.gov.ua/uk" class="btn support-btn">Support Ukraine</a>
         </div>
     </section>
+    
+    
+
+
+    <form action="subscribe.php" method="POST" class="subscribe-form">
+        <input type="email" name="email" placeholder="Enter your email" required>
+        <button type="submit">Subscribe</button>
+    </form>
+
+
+
+
+
+    <!-- --------------------FOOTER---------------------------- -->
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-links">
+                <a href="about.html">About Us</a>
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="terms.html">Terms of Service</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <svg width="24" height="24">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <svg width="24" height="24">
+                        <use href="./image/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <svg width="24" height="24">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
+    
