@@ -3,41 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wine Tasting Schedule</title>
+    <title>Ruslan Tretiak - Sommelier</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
+        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Minerva+Modern:wght@400;700&family=Anziano:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Italiana&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="tastings.html">Tastings</a>
-            <a href="get-your-ticket.html">Get your ticket</a>
-            <img src="logo.png" alt="Logo" class="logo">
-            <div class="social-icons">
-                <a href="https://facebook.com" target="_blank">Facebook</a>
-                <a href="https://youtube.com" target="_blank">YouTube</a>
-                <a href="https://instagram.com" target="_blank">Instagram</a>
-            </div>
-        </nav>
+    <!-- --------------------HEADER---------------------------- -->
+    <header class="page-header">
+        <div class="page-header-container">
+            <nav class="nav-page">
+                <ul class="nav-items">
+                    <li><a class="nav-link color link" href="tastings.html">TASTINGS</a></li>
+                    <li><a class="nav-link color link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                </ul>
+                <a href="index.html" class="logo-container"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <svg class="social-icons-svg color" width="24" height="24">
+                            <use href="./image/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://youtube.com" target="_blank">
+                        <svg class="social-icons-svg color" width="24" height="24">
+                            <use href="./image/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank">
+                        <svg class="social-icons-svg color" width="24" height="24">
+                            <use href="./image/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+        </div>
     </header>
-    <section class="tastings">
-        <div class="container">
-            <h1>WINE TASTING SCHEDULE</h1>
-            <div class="tasting">
-                <h2>Introduction to Wine Tasting</h2>
-                <p><strong>Date:</strong> [Date]</p>
-                <p><strong>Time:</strong> [Time]</p>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Description:</strong> A beginner-friendly session covering the basics of wine tasting, types of wine, and how to identify different aromas and flavors.</p>
+    </header>
+
+    <section class="tastings-section">
+        <div class="tastings-container">
+            <h1 class="tastings-title">WINE TASTING SCHEDULE</h1>
+            <div class="tasting-event">
+                <h2 class="tasting-title">Introduction to Wine Tasting</h2>
+                <ul class="tasting-details">
+                    <li class="tasting-detail"><strong>Date:</strong> [Date]</li>
+                    <li class="tasting-detail"><strong>Time:</strong> [Time]</li>
+                    <li class="tasting-detail"><strong>Location:</strong> [Location]</li>
+                    <li class="tasting-detail"><strong>Description:</strong> A beginner-friendly session covering the basics of wine tasting, types of wine, and how to identify different aromas and flavors.</li>
+                </ul>
             </div>
-            <div class="tasting">
-                <h2>Exploring Red Wines</h2>
-                <p><strong>Date:</strong> [Date]</p>
-                <p><strong>Time:</strong> [Time]</p>
-                <p><strong>Location:</strong> [Location]</p>
-                <p><strong>Description:</strong> Dive into the world of red wines, from light-bodied to full-bodied, and discover the diverse range of flavors and aromas.</p>
+            <div class="tasting-event">
+                <h2 class="tasting-title">Exploring Red Wines</h2>
+                <ul class="tasting-details">
+                    <li class="tasting-detail"><strong>Date:</strong> [Date]</li>
+                    <li class="tasting-detail"><strong>Time:</strong> [Time]</li>
+                    <li class="tasting-detail"><strong>Location:</strong> [Location]</li>
+                    <li class="tasting-detail"><strong>Description:</strong> Dive into the world of red wines, from light-bodied to full-bodied, and discover the diverse range of flavors and aromas.</li>
+                </ul>
             </div>
         </div>
     </section>
+    
 </body>
 </html>

@@ -60,7 +60,7 @@ body {
     width: 100%;
     padding: 52px 52px;
     position: absolute;
-    background: transparent; /* Зробити фон прозорим */
+    background: transparent;
     z-index: 1000;
 }
 
@@ -89,8 +89,25 @@ body {
 .nav-link {
     text-decoration: none;
     color: #E0E0DB;
-    /* font-family: 'AvantGardeC', serif; */
+    position: relative; 
     font-weight: 400;
+    padding: 5px 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #9fe2aa;
+    transition: width 0.5s ease, left 0.3s ease; /* Плавна анімація для підкреслення */
+}
+
+.nav-link:hover::after {
+    width: 100%; /* Підкреслення розширюється на всю ширину тексту */
+    left: 0;
 }
 
 .logo-container {
@@ -115,12 +132,20 @@ body {
     font-weight: 700;
     display: flex;
     align-items: center;
+    transition: transform 0.3s ease; 
 }
 
-.social-icons svg {
+.social-icons a:hover {
+    transform: scale(1.2); 
+}
+
+.social-icons-svg {
     height: 24px;
     width: 24px;
     fill: #ffffff;
+}
+.social-icons-svg:hover {
+    fill: #9fe2aa;
 }
 
 
@@ -138,7 +163,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 150vh;
+    /* height: 150vh; */
 }
 
 .hero-container {
@@ -148,20 +173,18 @@ body {
 }
 
 .hero-text-wrapper {
-    background: rgba(25, 25, 25, 0.5); /* Темно-сірий фон з прозорістю */
+    background: rgba(25, 25, 25, 0.4); 
     padding: 20px;
-    border-radius: 10px; /* Додати округлені кути */
+    border-radius: 10px; 
 }
-
 .hero-text-prof {
-    font-size: 3.5em; /* Виправлено коми на крапки */
+    font-size: 3.5em;
     font-family: 'Italiana', sans-serif;
 }
 
 .hero-text-name {
-    font-size: 10.5em; /* Зменшено розмір шрифту для зручного розміщення */
+    font-size: 10.5em; 
     font-family: 'Italiana', sans-serif;
-    margin-top: 0;
 }
 
 .under-hero-text {
@@ -207,15 +230,10 @@ body {
     text-align: left;
     position: relative;
 }
-/* .about-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-} */
+
 .about-title {
     font-family: 'Italiana', serif;
     font-size: 1.5em;
-    /* position: absolute; */
     top: 0;
     left: 20px;
     transform: translateY(-50%);
@@ -229,37 +247,13 @@ body {
     max-width: 700px;
     margin: 0 auto;
     text-align: justify;
-    padding-top: 60px; /* Додано відступ зверху для правильного розміщення */
+    padding-top: 60px; 
 }
-
-/* .btn {
-    display: inline-block;
-    background-color: #c8c6bb;
-    color: #1a1a1a;
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 40px;
-}
-
-.btn:hover {
-    background-color: #0056B9;
-    color: #FFD800;
-}
-
-.support-btn {
-    display: block;
-    width: fit-content;
-    margin: 40px auto 0;
-    text-transform: uppercase;
-} */
 
 .btn {
     display: inline-block;
-    background-color: #2523238a; /* Оригінальний колір фону */
-    color: #E0E0DB; /* Оригінальний колір тексту */
+    background-color: #2523238a;
+    color: #E0E0DB; 
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 15px;
@@ -269,7 +263,7 @@ body {
     position: relative;
     overflow: hidden;
     z-index: 1;
-    transition: color 0.3s ease-in-out; /* Додаємо плавний перехід для кольору тексту */
+    transition: color 0.3s ease-in-out;
 }
 
 .btn::before,
@@ -281,7 +275,7 @@ body {
     width: 100%;
     height: 100%;
     z-index: -1;
-    transition: transform 0.8s ease-in-out;
+    transition: transform 1s ease-in-out;
 }
 
 .btn::before {
@@ -304,20 +298,16 @@ body {
 
 .btn:hover {
     color:#0056B9;; /* Оригінальний колір тексту при наведенні */
-    transform: scale(1.1); /* Ефект збільшення при наведенні */
+    transform: scale(0.9); /* Ефект збільшення при наведенні */
     font: bold;
 }
 
 .support-btn {
     display: block;
     width: fit-content;
-    margin: 40px auto 0;
+    margin: 30px auto 0;
     text-transform: uppercase;
 }
-
-
-
-
 
 
 
@@ -351,6 +341,13 @@ body {
 .subscribe-form button:hover {
     background-color: #005bb5;
 }
+
+
+
+
+/* .........................FOOTER....................... */
+
+
 
 .footer {
     background-color: #252525; /* темний фон для футера */
@@ -392,4 +389,117 @@ body {
 
 .social-icons a:hover {
     color: #0073e6;
+}
+
+
+
+
+
+/* .........................HERO GET TOUR TICKET....................... */
+.hero-text-ticket
+{
+    font-size: 10.5em; 
+    font-family: 'Italiana', sans-serif;
+}
+.ticket-background 
+{
+    background-image: url('./image/michael-wave-fif3VD4XVKg-unsplash-min.jpeg');
+}
+
+.ticket-btn-container
+{
+    margin-top: 100px;
+}
+
+.ticket-btn
+{
+    position: relative;
+    display: inline-flex;
+    padding: 10px 30px;
+    background:#E0E0DB ;
+    color: #048a16;
+    text-decoration: none;
+    letter-spacing: 1px;
+    overflow: hidden;
+    border-radius: 10px;
+font-size: large;}
+.ticket-btn::before
+{
+    content: '';
+    position: absolute;
+    top: var(--y);
+    left: var(--x);
+    transform: translate(-50%,-50%);
+    width: 0px;
+    height: 0px;
+    background:#9fe2aa;
+    border-radius: 50%;
+    transition: width 0.5s, height 0.5s;
+}
+.ticket-btn span 
+{
+    position: relative;
+    font-family: 'Italiana', sans-serif;
+    z-index: 1;
+    font-weight: bolder;
+}
+.ticket-btn:hover:before
+{
+    width: 300px;
+    height: 300px;
+
+}
+
+
+/* .........................TASTINGS PAGE....................... */
+.color {
+    color: #252525;
+    fill: #252525;
+}
+.tastings-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.tastings-section {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+.tastings-title {
+    font-size: 3em;
+    margin-bottom: 40px;
+    font-family: 'Minerva Modern', serif;
+}
+
+.tasting-event {
+    background-color: #F1F1F1;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tasting-title {
+    font-size: 2em;
+    margin-bottom: 10px;
+    font-family: 'Minerva Modern', serif;
+}
+
+.tasting-details {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tasting-detail {
+    font-size: 1.1em;
+    margin: 5px 0;
+    line-height: 1.6;
 }
