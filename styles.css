@@ -551,7 +551,7 @@ body {
 }
 
 .tasting-btn {
-    background-color: #4CAF50;
+    background-color: #E0E0DB;
     border: none;
     color: white;
     padding: 10px 24px;
@@ -565,7 +565,7 @@ body {
 }
 
 .tasting-btn:hover {
-    background-color: #45a049;
+    background-color: #9fe2aa;
 }
 
 
