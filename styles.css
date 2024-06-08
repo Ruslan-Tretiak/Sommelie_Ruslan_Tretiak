@@ -383,12 +383,12 @@ body {
 }
 
 .social-icons a {
-    color: #fff;
+    fill: #fff;
     text-decoration: none;
 }
 
 .social-icons a:hover {
-    color: #0073e6;
+    fill: #9fe2aa;
 }
 
 
@@ -422,7 +422,8 @@ body {
     letter-spacing: 1px;
     overflow: hidden;
     border-radius: 10px;
-font-size: large;}
+    font-size: large;
+}
 .ticket-btn::before
 {
     content: '';
@@ -502,4 +503,18 @@ font-size: large;}
     font-size: 1.1em;
     margin: 5px 0;
     line-height: 1.6;
+}
+
+
+/* ......................... MODAL ....................... */
+/* Додайте цей стиль, якщо він ще не був доданий */
+.event-tooltip {
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 3px;
+    pointer-events: none;
+    z-index: 10;
+    white-space: nowrap;
 }
