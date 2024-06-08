@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Italiana&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.css">
+    <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.js"></script>
 </head>
 <body>
     <!-- --------------------HEADER---------------------------- -->
@@ -60,9 +62,9 @@
         </div>
     </section>
 
-    <!-- Контейнер для календаря -->
-
-   
+    <!-- Modal Window -->
+    
+    
 
     <!-- --------------------FOOTER---------------------------- -->
 
@@ -93,6 +95,12 @@
             </div>
         </div>
     </footer>
+    <div id="ticket-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select a Date</h2>
+            <input type="text" id="calendar-input" readonly>
+        </div>
     <script src="scripts.js"></script>
 </body>
 </html>
