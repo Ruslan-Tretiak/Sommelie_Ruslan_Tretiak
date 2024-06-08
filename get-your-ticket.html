@@ -11,9 +11,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Italiana&display=swap" rel="stylesheet">
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.css' rel='stylesheet' />
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/5.10.1/main.min.js'></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body>
     <!-- --------------------HEADER---------------------------- -->
@@ -48,7 +45,7 @@
     
     <!-- --------------------HERO---------------------------- -->
 
-    <section class="hero ticket-background ">
+    <section class="hero ticket-background">
         <div class="hero-container">
             <div class="hero-text-wrapper">
                 <h1 class="hero-text-ticket">TASTE WITH US</h1>
@@ -57,23 +54,15 @@
                 </div>
             </div>
             <div class="ticket-btn-container">
-                <button class="ticket-btn " type="button" id="buy-ticket-btn" data-modal-open><span>BUY YOUR TICKET</span> </button>
-                <script>
-                    const btn = document.querySelector('.ticket-btn');
-                    btn.onmousemove = function(e){
-                        const x = e.pageX - btn.offsetLeft;
-                        const y = e.pageY - btn.offsetTop;
-
-                        btn.style.setProperty('--x', x + 'px');
-                        btn.style.setProperty('--y', y + 'px');
-                    }
-                </script>
+                <button class="ticket-btn" type="button" id="buy-ticket-btn"><span>BUY YOUR TICKET</span>
+                </button>
             </div>
         </div>
     </section>
 
     <!-- Контейнер для календаря -->
-    <div id="calendar-container" style="display: none;"></div>
+
+   
 
     <!-- --------------------FOOTER---------------------------- -->
 
