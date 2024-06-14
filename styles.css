@@ -57,6 +57,13 @@ body {
     font-family: 'cormorant-infant-regular', serif;
     color: #000000;
 }
+@media screen and (min-width: 320px){
+    .conteiner {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 /* ...............HEADER....................... */
 
 
@@ -113,7 +120,7 @@ body {
 }
 
 .nav-link:hover::after {
-    width: 100%; /* Підкреслення розширюється на всю ширину тексту */
+    width: 100%; 
     left: 0;
 }
 
@@ -203,7 +210,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 50px 120px;
 }
 
 .location {
@@ -307,9 +314,9 @@ body {
 
 .support-btn {
     display: block;
-    width: fit-content;
     margin: 30px auto 0;
     text-transform: uppercase;
+    transition: transform 1s ease-in-out;
 }
 
 
@@ -563,7 +570,7 @@ body {
 .tasting-btn {
     background-color: #E0E0DB;
     border: none;
-    color: white;
+    color: #000000;
     padding: 10px 24px;
     text-align: center;
     text-decoration: none;
@@ -576,6 +583,7 @@ body {
 
 .tasting-btn:hover {
     background-color: #9fe2aa;
+    color: #ffffff;
 }
 
 
