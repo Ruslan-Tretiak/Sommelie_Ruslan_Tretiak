@@ -14,8 +14,8 @@
 </head>
 <body>
     <!-- --------------------HEADER---------------------------- -->
-    <header class="page-header conteiner">
-        <div class="page-header-container ">
+    <!-- <header class="page-header container">
+        <div class="page-header-container">
             <nav class="nav-page">
                 <ul class="nav-items">
                     <li><a class="nav-link link" href="tastings.html">TASTINGS</a></li>
@@ -41,11 +41,77 @@
                 </div>
             </nav>
         </div>
-    </header>
-    
+    </header> -->
+    <!-- Header Section -->
+<header class="page-header">
+    <div class="page-header-container">
+        <a href="index.html" class="logo-container"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
+        <nav class="nav-page">
+            <ul class="nav-items">
+                <li><a class="nav-link link" href="tastings.html">TASTINGS</a></li>
+                <li><a class="nav-link link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <svg class="social-icons-svg" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <svg class="social-icons-svg" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <svg class="social-icons-svg" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+        <!-- Burger Menu Button -->
+        <button class="burger-menu" id="burger-menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </div>
+</header>
+
+<!-- Modal Menu -->
+<div id="modal-menu" class="modal-menu">
+    <div class="modal-content-menu">
+        <span class="close-menu">&times;</span>
+        <nav class="nav-modal">
+            <ul class="nav-items-modal">
+                <li><a class="nav-link-modal" href="tastings.html">TASTINGS</a></li>
+                <li><a class="nav-link-modal" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+            </ul>
+            <div class="social-icons-modal">
+                <a href="https://facebook.com" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-facebook"></use>
+                    </svg>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-youtube"></use>
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
+                        <use href="./image/sprite.svg#icon-instagram"></use>
+                    </svg>
+                </a>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
     <!-- --------------------HERO---------------------------- -->
 
-    <section class="hero">
+    <!-- <section class="hero">
         <div class="hero-container">
             <div class="hero-text-wrapper">
                 <h1 class="hero-text-prof">SOMMELIER</h1>
@@ -63,11 +129,40 @@
                 </div>
             </div>
         </div>
-    </section>
-    
+    </section> -->
+    <!-- Hero Section -->
+<section class="hero">
+    <div class="hero-container">
+        <div class="hero-text-wrapper">
+            <h1 class="hero-text-prof">SOMMELIER</h1>
+            <h2 class="hero-text-name">RUSLAN TRETIAK</h2>
+            <div class="under-hero-text">
+                <p>Come and join a relaxed wine journey where each glass has its own story. With over 10 years in the wine industry, I'll guide you through a variety of flavors and aromas, adding a touch of humor and practical wine tips. Wine is simple, and there won't be any promotions—just pure enjoyment and discovery of hidden gems.</p>
+                <p>Experience wine like never before with Ruslan Tretiak.</p>
+            </div>
+            <div class="contact-info">
+                <a class="location" href="https://goo.gl/maps/sykkylvsvegen125" target="_blank">Sykkylvsvegen 125, 6230 Sykkylven NÆRINGSFABRIKKEN</a>
+                <div class="contacts">
+                    <a href="mailto:theruslantretiak@gmail.com">smake.space@gmail.com</a>
+                    <a href="tel:09861183">+47 9861183</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <!-- --------------------ABOUT---------------------------- -->
 
-    <section class="about container">
+    <!-- <section class="about container">
+        <div class="about-container">
+            <h3 class="about-title">MAKE IT STAND OUT.</h3>
+            <div class="about-text">
+                <p>IT ALL BEGAN MORE THAN 10 YEARS AGO WHEN, AS A BARTENDER, I DISCOVERED MY PASSION FOR WINE. OVER THE YEARS, I WORKED IN VARIOUS ROLES WITHIN THE WINE INDUSTRY. I HAD THE OPPORTUNITY TO WORK AT A VINEYARD IN PORTUGAL AND CREATED WINE COURSES. HOWEVER, MY TRUE JOY HAS ALWAYS COME FROM HOSTING WINE TASTINGS. UNFORTUNATELY, THE RUSSIAN INVASION FORCED ME AND MY FAMILY TO LEAVE OUR COUNTRY AND START ANEW. YET, MY PASSION FOR WINE HAS REMAINED UNWAVERING. JOIN ME ON AN EXCITING WINE JOURNEY THAT BRINGS FLAVORS AND STORIES FROM AROUND THE WORLD DIRECTLY TO YOUR GLASS.</p>
+                <a href="https://u24.gov.ua/" target="_blank" class="btn support-btn">Support Ukraine</a>
+            </div>
+        </div>
+    </section> -->
+    <section class="about">
         <div class="about-container">
             <h3 class="about-title">MAKE IT STAND OUT.</h3>
             <div class="about-text">
@@ -77,14 +172,13 @@
         </div>
     </section>
     
-    
 
 
-    <iframe id="embed-form-display" title="Embedded Form Preview" frameborder="0" height="204px" width="600" scrolling="no" class="iframeDivRedesign-2lMen" srcdoc="
+    <!-- <iframe id="embed-form-display" title="Embedded Form Preview" frameborder="0" height="204px" width="600" scrolling="no" class="iframeDivRedesign-2lMen" srcdoc="
   <div id=&quot;mc_embed_shell&quot;>
       <link href=&quot;//cdn-images.mailchimp.com/embedcode/classic-061523.css&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;>
   </div>
-"></iframe>
+"></iframe> -->
 
 
 
@@ -92,7 +186,7 @@
 
     <!-- --------------------FOOTER---------------------------- -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
                 <a href="about.html">About Us</a>
@@ -118,7 +212,37 @@
                 </a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank">
+                <svg width="24" height="24">
+                    <use href="./image/sprite.svg#icon-facebook"></use>
+                </svg>
+            </a>
+            <a href="https://youtube.com" target="_blank">
+                <svg width="24" height="24">
+                    <use href="./image/sprite.svg#icon-youtube"></use>
+                </svg>
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <svg width="24" height="24">
+                    <use href="./image/sprite.svg#icon-instagram"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</footer>
+
     <script async>(function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='59418a098db5d3436d4979738e0e82dd7694832b04c515f822e692a1bafac339';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumome.com/');</script>
 </body>
 </html>
