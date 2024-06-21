@@ -246,7 +246,7 @@ body {
 .nav-items-modal {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 15px;
 }
 
 .nav-link-modal {
@@ -254,6 +254,9 @@ body {
     color: #252525;
     font-size: 1.2em;
     padding: 10px 0;
+}
+.nav-items-modal li {
+    margin-bottom: 50px; /* Додаємо відстань між елементами списку */
 }
 
 .social-icons-modal {
@@ -318,9 +321,6 @@ body {
     }
 }
 
-
-
-/* ...............HERO....................... */
 
 /* ...............HERO....................... */
 .hero {
@@ -801,6 +801,9 @@ body {
     color: #252525;
     fill: #252525;
 }
+.color:hover{
+    fill: #9fe2aa;
+}
 .tastings-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -854,6 +857,7 @@ body {
     line-height: 1.6;
     
 }
+
 @media screen and (max-width: 600px) {
 
     .nav-page {
@@ -929,6 +933,7 @@ body {
     max-width: 500px;
     position: relative;
     border-radius: 20px;
+
 }
 
 .close {
