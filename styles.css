@@ -168,8 +168,6 @@ body {
     height: 24px;
     width: 24px;
     fill: #ffffff;   
-    stroke: #000000; /* Додаємо чорний бордер */
-    stroke-width: 1px; /* Ширина бордера */
 }
 .social-icons-svg:hover {
     fill: #9fe2aa;
@@ -272,39 +270,6 @@ body {
 }
 
 
-
-
-
-
-
-/* Desktop styles (default) */
-/* .page-header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-}
-
-.nav-page {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.logo {
-    height: 70px;
-}
-
-.logo-container {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-} */
-
 /* Phone styles */
 @media screen and (max-width: 600px) {
 
@@ -356,69 +321,6 @@ body {
 
 
 /* ...............HERO....................... */
-/* .hero {
-    background-image: url('./image/michael-wave-gVkAiPchYhY-unsplash-min.jpeg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 50px 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-container {
-    padding-bottom: 188px;
-    padding-top: 120px;
-    width: 1420px;
-}
-
-.hero-text-wrapper {
-    background: rgba(25, 25, 25, 0.4); 
-    padding: 20px;
-    border-radius: 10px; 
-}
-.hero-text-prof {
-    font-size: 3.5em;
-}
-
-.hero-text-name {
-    font-size: 10.5em; 
-}
-
-.under-hero-text {
-    max-width: 800px;
-    margin: 0 auto;
-    font-size: 1.2em;
-    line-height: 1.6;
-}
-
-.contact-info {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 50px 120px;
-}
-
-.location {
-    width: 250px;
-}
-
-.contacts {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-info a {
-    color: #FFFFFF;
-    margin-top: 10px;
-    text-decoration: none;
-} */
-
 
 /* ...............HERO....................... */
 .hero {
@@ -485,30 +387,6 @@ body {
     margin-top: 10px;
     text-decoration: none;
 }
-
-/* Phone styles */
-/* @media screen and (max-width: 600px) {
-    .hero-text-prof {
-        font-size: 1.5em;
-    }
-
-    .hero-text-name {
-        font-size: 2.5em;
-    }
-
-    .under-hero-text {
-        font-size: 1em;
-    }
-
-    .contact-info {
-        flex-direction: column;
-        padding: 20px;
-    }
-
-    .location, .contacts {
-        text-align: center;
-    }
-} */
 
 /* Tablet styles */
 @media screen and (max-width: 768px) {
@@ -588,94 +466,6 @@ body {
     }
 }
 
-
-
-
-/* ...............ABOUT....................... */
-
-/* .about {
-    background-color: #E0E0DB;
-    padding: 60px 20px;
-    text-align: left;
-    position: relative;
-}
-
-.about-title {
-    font-family: 'Italiana', serif;
-    font-size: 1.5em;
-    top: 0;
-    left: 20px;
-    transform: translateY(-50%);
-    margin: 0;
-}
-
-.about-text {
-    font-family: 'Italiana', serif;
-    font-size: 2.2em;
-    line-height: 1.6;
-    max-width: 700px;
-    margin: 0 auto;
-    text-align: justify;
-    padding-top: 60px; 
-}
-
-.btn {
-    display: inline-block;
-    background-color: #2523238a;
-    color: #E0E0DB; 
-    padding: 10px 20px;
-    text-decoration: none;
-    border-radius: 15px;
-    font-weight: normal ;
-    text-align: center;
-    margin-top: 40px;
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-    transition: color 0.3s ease-in-out;
-}
-
-.btn::before,
-.btn::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-    transition: transform 1.2s ease-in-out;
-}
-
-.btn::before {
-    background-color: #0056B9; 
-    transform: translateX(-100%);
-}
-
-.btn::after {
-    background-color: #FFD800; 
-    transform: translateX(100%);
-}
-
-.btn:hover::before {
-    transform: translateX(0); 
-}
-.btn:hover::after {
-    transform: translateX(0); 
-}
-
-.btn:hover {
-    color:#0056B9;; 
-    transform: scale(0.9); 
-    font: bold;
-}
-
-.support-btn {
-    display: block;
-    margin: 30px auto 0;
-    text-transform: uppercase;
-    transition: transform 1s ease-in-out;
-} */
 
 /* ...............ABOUT....................... */
 .about {
@@ -820,52 +610,6 @@ body {
 
 
 
-
-/* .........................FOOTER....................... */
-
-
-
-/* .footer {
-    background-color: #252525; 
-    color: #fff;
-    padding: 40px 20px;
-}
-
-.footer-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.footer-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    fill: #fff;
-    text-decoration: none;
-}
-
-.social-icons a:hover {
-    fill: #9fe2aa;
-} */
 /* .........................FOOTER....................... */
 .footer {
     background-color: #252525; 
@@ -937,14 +681,9 @@ body {
     }
 }
 
-
-
-
-
 /* .........................HERO GET TOUR TICKET....................... */
 .hero-text-ticket
 {
-    font-size: 10.5em; 
     font-family: 'Italiana', sans-serif;
 }
 .ticket-background 
@@ -996,6 +735,65 @@ body {
     height: 300px;
 
 }
+/* Phone styles */
+@media screen and (max-width: 600px) {
+    .hero-text-ticket {
+        font-size: 2em;
+    }
+
+    .under-hero-text {
+        font-size: 1em;
+    }
+
+    .ticket-btn-container {
+        margin-top: 20px;
+    }
+
+    .ticket-btn {
+        padding: 8px 20px;
+        font-size: medium;
+    }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+    .hero-text-ticket {
+        font-size: 3em;
+    }
+
+    .under-hero-text {
+        font-size: 1.2em;
+    }
+
+    .ticket-btn-container {
+        margin-top: 30px;
+    }
+
+    .ticket-btn {
+        padding: 10px 25px;
+        font-size: large;
+    }
+}
+
+/* Desktop styles (default) */
+@media screen and (min-width: 769px) {
+    .hero-text-ticket {
+        font-size: 10.5em;
+    }
+
+    .under-hero-text {
+        font-size: 1.2em;
+    }
+
+    .ticket-btn-container {
+        margin-top: 50px;
+    }
+
+    .ticket-btn {
+        padding: 10px 30px;
+        font-size: large;
+    }
+}
 
 
 /* .........................TASTINGS PAGE....................... */
@@ -1008,7 +806,7 @@ body {
     margin: 0 auto;
     padding-bottom: 188px;
     padding-top: 120px;
-    width: 1420px;
+    width: 100%;
 }
 
 .tastings-section {
@@ -1055,6 +853,55 @@ body {
     margin: 5px 0;
     line-height: 1.6;
     
+}
+@media screen and (max-width: 600px) {
+
+    .nav-page {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+    .line {
+       background-color: #000000;
+    }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 768px) {
+
+    .nav-page {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
 }
 
 

@@ -16,32 +16,68 @@
     <!-- --------------------HEADER---------------------------- -->
     <header class="page-header">
         <div class="page-header-container">
+            <a href="index.html" class="logo-container"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
             <nav class="nav-page">
                 <ul class="nav-items">
                     <li><a class="nav-link link" href="tastings.html">TASTINGS</a></li>
                     <li><a class="nav-link link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
                 </ul>
-                <a href="index.html" class="logo-container"><img src="./image/logoRT.png" alt="Logo" class="logo"></a>
                 <div class="social-icons">
+                    <a href="https://www.facebook.com/smake.space" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@smakespace" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-youtube"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.instagram.com/theruslantretiak/" target="_blank">
+                        <svg width="24" height="24">
+                            <use href="./image/sprite.svg#icon-instagram"></use>
+                        </svg>
+                    </a>
+                </div>
+            </nav>
+            <!-- Burger Menu Button -->
+            <button class="burger-menu" id="burger-menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+    </header>
+    
+    <!-- Modal Menu -->
+    <div id="modal-menu" class="modal-menu">
+        <div class="modal-content-menu">
+            <span class="close-menu">&times;</span>
+            <nav class="nav-modal">
+                <ul class="nav-items-modal">
+                    <li><a class="nav-link-modal" href="tastings.html">TASTINGS</a></li>
+                    <li><a class="nav-link-modal" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                </ul>
+                <div class="social-icons-modal">
                     <a href="https://facebook.com" target="_blank">
-                        <svg class="social-icons-svg" width="24" height="24">
+                        <svg class="social-icons-svg-modal" width="24" height="24">
                             <use href="./image/sprite.svg#icon-facebook"></use>
                         </svg>
                     </a>
                     <a href="https://youtube.com" target="_blank">
-                        <svg class="social-icons-svg" width="24" height="24">
+                        <svg class="social-icons-svg-modal" width="24" height="24">
                             <use href="./image/sprite.svg#icon-youtube"></use>
                         </svg>
                     </a>
                     <a href="https://instagram.com" target="_blank">
-                        <svg class="social-icons-svg" width="24" height="24">
+                        <svg class="social-icons-svg-modal" width="24" height="24">
                             <use href="./image/sprite.svg#icon-instagram"></use>
                         </svg>
                     </a>
                 </div>
             </nav>
         </div>
-    </header>
+    </div>
     
     <!-- --------------------HERO---------------------------- -->
 
@@ -67,24 +103,22 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="about.html">About Us</a>
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="contact.html">Contact</a>
+                <a href="#about-section">About Us</a>
+                <a href="index.html">Contact</a>
             </div>
             <div class="social-icons">
-                <a href="https://facebook.com" target="_blank">
-                    <svg width="24" height="24">
+                <a href="https://www.facebook.com/smake.space" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
                         <use href="./image/sprite.svg#icon-facebook"></use>
                     </svg>
                 </a>
-                <a href="https://youtube.com" target="_blank">
-                    <svg width="24" height="24">
+                <a href="https://www.youtube.com/@smakespace" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
                         <use href="./image/sprite.svg#icon-youtube"></use>
                     </svg>
                 </a>
-                <a href="https://instagram.com" target="_blank">
-                    <svg width="24" height="24">
+                <a href="https://www.instagram.com/theruslantretiak/" target="_blank">
+                    <svg class="social-icons-svg-modal" width="24" height="24">
                         <use href="./image/sprite.svg#icon-instagram"></use>
                     </svg>
                 </a>
@@ -101,5 +135,7 @@
             </div>
     </div>
     <script src="scripts.js"></script>
+    <script src="script.js"></script>
+    <script src="script-burger-menu.js"></script>
 </body>
 </html>
