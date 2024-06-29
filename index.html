@@ -3,15 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruslan Tretiak - Sommelier</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet"
-        integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Ruslan Tretiak - Sommelier - smake space</title>
+    <meta name="description" content="Join a relaxed wine journey with Ruslan Tretiak. Discover the flavors and aromas of wine with over 10 years of experience.">
+    <meta name="keywords" content="sommelier, wine tasting, wine journey, Ruslan Tretiak, wine expert, wine flavors, wine aromas">
+    <meta name="author" content="Ruslan Tretiak">
+    <meta property="og:title" content="Ruslan Tretiak - Sommelier">
+    <meta property="og:description" content="Join a relaxed wine journey with Ruslan Tretiak. Discover the flavors and aromas of wine with over 10 years of experience.">
+    <meta property="og:image" content="https://yourdomain.com/image/logoRT.png">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ruslan Tretiak - Sommelier">
+    <meta name="twitter:description" content="Join a relaxed wine journey with Ruslan Tretiak. Discover the flavors and aromas of wine with over 10 years of experience.">
+    <meta name="twitter:image" content="https://yourdomain.com/image/logoRT.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" rel="stylesheet" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Italiana&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Ms+Madi&display=swap" rel="stylesheet"></head>
 <body>
     <!-- --------------------HEADER---------------------------- -->
     <header class="page-header">
@@ -21,6 +30,7 @@
                 <ul class="nav-items">
                     <li><a class="nav-link link" href="tastings.html">TASTINGS</a></li>
                     <li><a class="nav-link link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                    <li><a class="nav-link link" href="get-to-know-me.html">GET TO KNOW ME</a></li>
                 </ul>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/smake.space" target="_blank">
@@ -40,10 +50,10 @@
                     </a>
                 </div>
             </nav>
-            <button class="burger-menu" id="burger-menu">
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
-                <span class="burger-line"></span>
+            <button type="button" class="burger-menu" id="burger-menu">
+                <svg class="burger" width="32" height="32">
+                    <use href="./image/sprite.svg#icon-menu"></use>
+                </svg>
             </button>
         </div>
     </header>
@@ -56,6 +66,7 @@
                 <ul class="nav-items-modal">
                     <li><a class="nav-link-modal" href="tastings.html">TASTINGS</a></li>
                     <li><a class="nav-link-modal" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                    <li><a class="nav-link-modal" href="get-to-know-me.html">GET TO KNOW ME</a></li>
                 </ul>
                 <div class="social-icons-modal">
                     <a href="https://www.facebook.com/smake.space" target="_blank">
@@ -82,17 +93,18 @@
     <section class="hero">
         <div class="hero-container">
             <div class="hero-text-wrapper">
-                <h1 class="hero-text-prof">SOMMELIER</h1>
-                <h2 class="hero-text-name">RUSLAN TRETIAK</h2>
+                <h1 class="hero-text-name">SMAKE SPACE</h1>
+                <h2 class="hero-text-by">project by</h2>
+                <h3 class="hero-text-prof">SOMMELIER RUSLAN TRETIAK</h3>
                 <div class="under-hero-text">
-                    <p>Come and join a relaxed wine journey where each glass has its own story. With over 10 years in the wine industry, I'll guide you through a variety of flavors and aromas, adding a touch of humor and practical wine tips. Wine is simple, and there won't be any promotions—just pure enjoyment and discovery of hidden gems.</p>
-                    <p>Experience wine like never before with Ruslan Tretiak.</p>
+                    <p>Join a relaxed wine journey where each glass has its own story. With over 10 years in the wine industry, you will be guided through a variety of flavors and aromas, with added touches of humor and practical wine tips. Wine is simple, and there won't be any promotions—just pure enjoyment and discovery of hidden gems.</p>
+                    <p> Experience wine like never before.</p>
                 </div>
                 <div class="contact-info">
                     <a class="location" href="https://goo.gl/maps/sykkylvsvegen125" target="_blank">Sykkylvsvegen 125, 6230 Sykkylven NÆRINGSFABRIKKEN</a>
                     <div class="contacts">
                         <a href="mailto:theruslantretiak@gmail.com">smake.space@gmail.com</a>
-                        <a href="tel:09861183">+47 9861183</a>
+                        <a href="tel:+479861183">+47 9861183</a>
                     </div>
                 </div>
             </div>
@@ -104,9 +116,22 @@
         <div class="about-container">
             <h3 class="about-title">MAKE IT STAND OUT.</h3>
             <div class="about-text">
-                <p>IT ALL BEGAN MORE THAN 10 YEARS AGO WHEN, AS A BARTENDER, I DISCOVERED MY PASSION FOR WINE. OVER THE YEARS, I WORKED IN VARIOUS ROLES WITHIN THE WINE INDUSTRY. I HAD THE OPPORTUNITY TO WORK AT A VINEYARD IN PORTUGAL AND CREATED WINE COURSES. HOWEVER, MY TRUE JOY HAS ALWAYS COME FROM HOSTING WINE TASTINGS. UNFORTUNATELY, THE RUSSIAN INVASION FORCED ME AND MY FAMILY TO LEAVE OUR COUNTRY AND START ANEW. YET, MY PASSION FOR WINE HAS REMAINED UNWAVERING. JOIN ME ON AN EXCITING WINE JOURNEY THAT BRINGS FLAVORS AND STORIES FROM AROUND THE WORLD DIRECTLY TO YOUR GLASS.</p>
-                <a href="https://u24.gov.ua/" target="_blank" class="btn support-btn">Support Ukraine</a>
+                <p>
+                    Our exclusive wine tastings offer an immersive experience where each glass is an adventure, guiding you through a spectrum of flavors and aromas.
+                    Whether you are a novice or a connoisseur, our tastings are tailored to enhance your understanding and appreciation of wine.
+
+During our wine tastings, you will learn about the rich history and culture behind each wine, exploring regions from around the world. We emphasize the importance of enjoying wine without the pressure of promotions or sales pitches. Our focus is on the pure enjoyment and the stories each wine tells.
+
+Guests will engage in a sensory journey, where we cover the fundamentals of wine tasting, including how to properly taste wine, identify different aromas, and understand flavor profiles. Our events are interactive and enjoyable, filled with practical tips and a touch of humor to make learning about wine fun and memorable.
+
+What sets our wine tastings apart is the relaxed and welcoming atmosphere. We believe that wine tasting should be accessible and enjoyable for everyone. Our sessions often include blind tastings, encouraging guests to trust their senses and discover new favorites without preconceived notions.
+
+Join us for an unforgettable wine tasting experience that combines education, enjoyment, and discovery. Visit our site to explore upcoming tastings and secure your spot for an evening of delightful wines and enriching stories. Experience the world of wine like never before, where every sip is a step into a new adventure.
+                </p>
             </div>
+            <div class="signature">
+                Ruslan Tretiak
+            </div>         
         </div>
     </section>
 
@@ -114,8 +139,11 @@
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-links">
-                <a href="#about-section">About Us</a>
-                <a href="index.html">Contact</a>
+                <ul class="nav-items-footer">
+                    <li><a class="footer-link nav-link" href="tastings.html">TASTINGS</a></li>
+                    <li><a class="footer-link nav-link" href="get-your-ticket.html">GET YOUR TICKET</a></li>
+                    <li><a class="footer-link nav-link" href="get-to-know-me.html">GET TO KNOW ME</a></li>
+                </ul>
             </div>
             <div class="social-icons">
                 <a href="https://www.facebook.com/smake.space" target="_blank">

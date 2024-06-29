@@ -34,7 +34,8 @@ ol {
     margin-bottom: 0;
 }
 h1,
-h2 {
+h2,
+h3 {
     font-family: 'Italiana', sans-serif;
 }
 
@@ -176,150 +177,6 @@ body {
 
 
 
-/* Burger Menu Button */
-.burger-menu {
-    display: none;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 30px;
-    height: 30px;
-    background: transparent;
-    border: none;
-    cursor: pointer;
-    z-index: 1001;
-}
-
-.burger-line {
-    width: 100%;
-    height: 3px;
-    background-color: #ffffff;
-}
-
-
-
-
-/* Modal Menu */
-.modal-menu {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.modal-content-menu {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 300px;
-}
-
-.close-menu {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close-menu:hover,
-.close-menu:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.nav-modal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.nav-items-modal {
-    list-style: none;
-    padding: 0;
-    margin: 15px;
-}
-
-.nav-link-modal {
-    text-decoration: none;
-    color: #252525;
-    font-size: 1.2em;
-    padding: 10px 0;
-}
-.nav-items-modal li {
-    margin-bottom: 50px; /* Додаємо відстань між елементами списку */
-}
-
-.social-icons-modal {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-icons-svg-modal {
-    height: 24px;
-    width: 24px;
-    fill: #252525;
-    margin: 0 10px;
-}
-
-
-/* Phone styles */
-@media screen and (max-width: 600px) {
-
-    .nav-page {
-        display: none;
-    }
-
-    .social-icons {
-        display: none;
-    }
-
-    .burger-menu {
-        display: flex;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-
-    .logo-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
-    }
-}
-
-/* Tablet styles */
-@media screen and (max-width: 768px) {
-
-    .nav-page {
-        display: none;
-    }
-
-    .burger-menu {
-        display: flex;
-        position: absolute;
-        right: 20px;
-        top: 20px;
-    }
-
-    .logo-container {
-        position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
-    }
-}
 
 
 /* ...............HERO....................... */
@@ -338,7 +195,7 @@ body {
 }
 
 .hero-container {
-    padding-bottom: 188px;
+    padding-bottom: 20px;
     padding-top: 120px;
     width: 100%;
     max-width: 1420px;
@@ -362,9 +219,14 @@ body {
     max-width: 800px;
     margin: 0 auto;
     font-size: 1.2em;
-    line-height: 1.6;
+    line-height: 1.6;   
+    padding-top: 25px;
 }
+.hero-text-by {
+    font-style:oblique;
+    padding-bottom:25px ;
 
+}
 .contact-info {
     margin-top: 20px;
     display: flex;
@@ -400,6 +262,9 @@ body {
 
     .under-hero-text {
         font-size: 1.2em;
+        margin-top: 50px;
+        width: 250px;
+
     }
 
     .contact-info {
@@ -486,11 +351,11 @@ body {
 
 .about-text {
     font-family: 'Italiana', serif;
-    font-size: 2.2em;
-    line-height: 1.6;
-    max-width: 700px;
+    font-size: 1.2em;
+    line-height: 1.4;
+    max-width: 1200px;
     margin: 0 auto;
-    text-align: justify;
+    text-align:right;
     padding-top: 60px; 
 }
 
@@ -554,9 +419,7 @@ body {
 
 /* Phone styles */
 @media screen and (max-width: 600px) {
-    .about-text {
-        font-size: 1em;
-    }
+    
 
     .btn {
         padding: 8px 16px;
@@ -566,9 +429,7 @@ body {
 
 /* Tablet styles */
 @media screen and (max-width: 768px) {
-    .about-text {
-        font-size: 1.5em;
-    }
+
 
     .btn {
         padding: 10px 20px;
@@ -627,17 +488,18 @@ body {
 .footer-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px;
+}
+.footer-link {
+    font-size: 0.7em;
 }
 
-.footer-links a {
+.nav-items-footer {
     color: #fff;
     text-decoration: none;
+    list-style: none;
 }
 
-.footer-links a:hover {
-    text-decoration: underline;
-}
 
 .social-icons {
     display: flex;
@@ -858,6 +720,31 @@ body {
     
 }
 
+.tasting-buttons {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.tasting-btn {
+    background-color: #E0E0DB;
+    border: none;
+    color: #000000;
+    padding: 10px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tasting-btn:hover {
+    background-color: #9fe2aa;
+    color: #ffffff;
+}
+
+
 @media screen and (max-width: 600px) {
 
     .nav-page {
@@ -907,9 +794,213 @@ body {
         top: 20px;
     }
 }
+/* ...............GET-TO-KNOW-ME....................... */
+/* Get to Know Me Page */
+.get-to-know-me {
+    padding: 120px 20px;
+    background-color: #f7f7f7;
+}
 
+.get-to-know-me-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
 
-/* ......................... MODAL ....................... */
+.about-me-image {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 0 20px;
+}
+
+.about-me-image img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-me-text {
+    flex: 1 1 45%;
+    max-width: 45%;
+    margin: 0 20px;
+}
+
+.about-me-text h1 {
+    font-size: 2.5em;
+    font-family: 'Italiana', serif;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-me-text p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me-image, .about-me-text {
+        flex: 1 1 100%;
+        max-width: 100%;
+        margin: 20px 0;
+    }
+
+    .about-me-text h1 {
+        font-size: 2em;
+    }
+}
+
+.signature {
+    font-family: "Ms Madi", cursive;
+    font-size: 48px;
+    color: #000;
+    text-align: right;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+
+  
+/* Basic reset for the burger menu */
+.burger-menu {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+.burger {
+    width: 100%;
+    stroke: #9fe2aa;
+    background: transparent;
+    fill: #FFFFFF;
+}
+
+/* Modal Menu */
+.modal-menu {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.close-menu {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-menu:hover,
+.close-menu:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-modal {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-items-modal {
+    list-style: none;
+    padding: 0;
+    margin: 15px;
+}
+
+.nav-link-modal {
+    text-decoration: none;
+    color: #252525;
+    font-size: 1.2em;
+    padding: 10px 0;
+}
+
+.nav-items-modal li {
+    margin-bottom: 50px;
+}
+
+.social-icons-modal {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-icons-svg-modal {
+    height: 24px;
+    width: 24px;
+    fill: #252525;
+    margin: 0 10px;
+}
+
+/* Phone styles */
+@media screen and (max-width: 600px) {
+    .nav-page {
+        display: none;
+    }
+
+    .social-icons {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1030px) {
+    .nav-page {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .logo-container {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 20px;
+    }
+}
 
 .modal {
     display: none;
@@ -921,11 +1012,10 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
-    
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #E0E0DB;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -933,7 +1023,6 @@ body {
     max-width: 500px;
     position: relative;
     border-radius: 20px;
-
 }
 
 .close {
@@ -950,28 +1039,9 @@ body {
     cursor: pointer;
 }
 
-.tasting-buttons {
-    margin-top: 20px;
-    text-align: center;
-}
 
-.tasting-btn {
-    background-color: #E0E0DB;
-    border: none;
-    color: #000000;
-    padding: 10px 24px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 4px;
-}
 
-.tasting-btn:hover {
-    background-color: #9fe2aa;
-    color: #ffffff;
-}
+
+
 
 
