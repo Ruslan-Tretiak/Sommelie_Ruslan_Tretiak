@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.yourdomain.com/</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Tastings Page -->
+    <url>
+        <loc>https://www.yourdomain.com/tastings.html</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Get Your Ticket Page -->
+    <url>
+        <loc>https://www.yourdomain.com/get-your-ticket.html</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Get to Know Me Page -->
+    <url>
+        <loc>https://www.yourdomain.com/get-to-know-me.html</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+    </url>
+
+    <!-- Specific Tasting Event Pages -->
+    <url>
+        <loc>https://www.yourdomain.com/tasting-event/famous-piedmont-wines</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://www.yourdomain.com/tasting-event/all-about-sparkling-wines</loc>
+        <lastmod>2024-06-24</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <!-- Add more tasting event URLs as needed -->
+</urlset>
