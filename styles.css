@@ -352,10 +352,10 @@ body {
 .about-text {
     font-family: 'Italiana', serif;
     font-size: 1.2em;
-    line-height: 1.4;
+    line-height: 2;
     max-width: 1200px;
     margin: 0 auto;
-    text-align:right;
+    text-align:justify;
     padding-top: 60px; 
 }
 
@@ -871,6 +871,9 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1001;
+    position: absolute;
+    right: 20px; 
+    top: 20px;
 }
 
 .burger {
