@@ -93,26 +93,62 @@
     <!-- --------------------TASTINGS LIST---------------------------- -->
     <section class="tastings-section">
         <div class="tastings-container">
-            <h1 class="tastings-title">WINE TASTING SCHEDULE</h1>
-            <div class="tasting-event" id="tasting1">
-                <h2 class="tasting-title">Introduction to Wine Tasting</h2>
-                <ul class="tasting-details">
-                    <li class="tasting-detail"><strong>Date:</strong> 12.08.2024</li>
-                    <li class="tasting-detail"><strong>Time:</strong> 19:00</li>
-                    <li class="tasting-detail"><strong>Location:</strong> [Location]</li>
-                    <li class="tasting-detail"><strong>Description:</strong> A beginner-friendly session covering the basics of wine tasting, types of wine, and how to identify different aromas and flavors.</li>
-                </ul>
+            <h1 class="tastings-mein-title">WINE TASTING SCHEDULE</h1>
+            <div class="tasting-event" id="hidden-treasures-tasting">
+                <div class="event-container">
+                    <h3 class="tasting-title">Hidden Treasures from Vinmonopolet</h3>
+                    <div class="tasting-description">
+                        <p>Join us for an exclusive wine tasting event where we uncover the hidden treasures from Vinmonopolet. In this session, we'll explore wines that often go unnoticed but are true gems.</p>
+            
+                        <p>Experience the last remaining bottles in country—if you find a favorite, be prepared to embark on a quest to find more. Discover exceptional vintages that have been forgotten on the shelves, as well as new arrivals and wines you may have never heard of but are definitely worth trying.</p>
+                    </div>
+                    <p class="view-date" onclick="openModal()">Click to view the next date</p>
+                </div>
             </div>
-            <div class="tasting-event" id="tasting2">
-                <h2 class="tasting-title">Exploring Red Wines</h2>
-                <ul class="tasting-details">
-                    <li class="tasting-detail"><strong>Date:</strong> [Date]</li>
-                    <li class="tasting-detail"><strong>Time:</strong> [Time]</li>
-                    <li class="tasting-detail"><strong>Location:</strong> [Location]</li>
-                    <li class="tasting-detail"><strong>Description:</strong> Dive into the world of red wines, from light-bodied to full-bodied, and discover the diverse range of flavors and aromas.</li>
-                </ul>
+            
+            <div class="tasting-event" id="celebrity-favorite-wines">
+                <div class="event-container">
+                    <h3 class="tasting-title">Celebrity Favorite Wines</h3>
+                    <div class="tasting-description">
+                        <p>Join us for an exclusive wine tasting event showcasing the favorite wines of famous celebrities. In this session, we'll explore the preferred selections of renowned actors, sports icons, rock stars, and some of the most famous personalities in the world.</p>
+
+                        <p>Discover the wines loved by the likes of Lionel Messi, Brad Pitt, Jimmy Page, and many more. Experience the flavors and stories behind each wine, and taste the selections that these celebrities cherish.</p>
+
+                        <p>Don't miss this unique opportunity to enjoy a tasting event that combines the glamour of celebrity culture with the sophistication of fine wines.</p>
+                    </div>
+                    <p class="view-date">Click to view the next date</p>
+                </div>
             </div>
+            <div class="tasting-event" id="all-about-sparkling-wines">
+                <div class="event-container">
+                    <h3 class="tasting-title">All About Sparkling Wines</h3>
+                    <div class="tasting-description">
+                        <p>Join us for a comprehensive wine tasting event where we will delve into all styles of sparkling wines. This session will equip you with the knowledge to choose the perfect sparkling wine for any occasion.</p>
+            
+                        <p>From the elegance of champagne to the intriguing red sparkling wines, we'll explore the diverse world of bubbles. Learn to appreciate the nuances and styles of sparkling wines, and find your favorites for every situation.</p>
+            
+                        <p>Don't miss this unique opportunity to broaden your sparkling wine horizons in a single tasting event.</p>
+                    </div>
+                    <p class="view-date">Click to view the next date</p>
+                </div>
+            </div>
+            <div class="tasting-event" id="famous-piedmont-wines">
+                <div class="event-container">
+                    <h3 class="tasting-title">Famous Wines of Piedmont</h3>
+                    <div class="tasting-description">
+                        <p>Join us for a journey through the Italian region of Piedmont as we taste the most remarkable and intriguing wines of this area. This tasting session will highlight wines that are considered among the finest in Italy.</p>
+            
+                        <p>Experience the unique flavors and stories behind Piedmont's renowned wines. From robust reds to elegant whites, discover why these wines are celebrated as some of the best in the world.</p>
+            
+                        <p>Don't miss this opportunity to explore the rich wine heritage of Piedmont in an unforgettable tasting event.</p>
+                    </div>
+                    <p class="view-date">Click to view the next date</p>
+                </div>
+            </div>
+            
+            
         </div>
+        
     </section>
 
     <!-- --------------------FOOTER---------------------------- -->
@@ -144,6 +180,16 @@
             </div>
         </div>
     </footer>
+    <div id="ticket-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Select tasting date</h2>
+            <div class="tasting-buttons">
+                <button id="tasting1" class="tasting-btn">Introduction to Wine Tasting 12.08.2024</button>
+                <button id="tasting2" class="tasting-btn">Exploring Red Wines 17.08.2024</button>
+            </div>
+        </div>
+    </div>
 
     <script src="scripts.js"></script>
     <script src="script-burger-menu.js"></script>
