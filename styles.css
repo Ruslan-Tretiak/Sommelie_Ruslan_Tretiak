@@ -1,10 +1,10 @@
-/* :root {
-    --primery-font:'Italiana', sans-serif;
-    --secondary-font: 'cormorant-infant-regular', serif;
+:root {
+    --primary-font:'Italiana', sans-serif;
+    --secondary-font: "Josefin Sans", sans-serif;
     --acent-color:#FFFFFF;
     --title-color:#E0E0DB;
     --text-color:#434455;
-    /* --secondary-logo-color:#4D5AE5;
+    --secondary-logo-color:#4D5AE5;
     --link-color:#4D5AE5;
     --background-btn-hero:#4D5AE5;
     --hover-focus-btn:#404BBF;
@@ -16,8 +16,8 @@
     --potfolio-btn-focus-back:#404BBF;
     --potfolio-btn-color:#4D5AE5;
     --portfoli-staff-card:#E7E9FC;
-    --transition-duration:250ms cubic-bezier(0.4, 0, 0.2, 1); */
-
+    --transition-duration:250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 h1,
 h2,
 h3,
@@ -73,8 +73,10 @@ button {
 }
 
 body {
-    font-family: 'Cormorant Infant', serif;
+    /* font-family: 'Cormorant Infant', serif; */
+    font-family: "Josefin Sans", sans-serif;
     color: #000000;
+    
 }
 
 /* ...............HEADER....................... */
@@ -345,7 +347,7 @@ body {
 }
 
 .about-title {
-    font-family: 'Italiana', serif;
+    font-family: var(--primary-font);
     font-size: 1.5em;
     top: 0;
     left: 20px;
@@ -355,7 +357,7 @@ body {
 }
 
 .about-text {
-    font-family: 'Cormorant Infant', serif;
+    font-family: var(--secondary-font);
     font-size: 1.2em;
     line-height: 2;
     max-width: 1200px;
@@ -378,7 +380,7 @@ body {
     overflow: hidden;
     z-index: 1;
     transition: color 0.3s ease-in-out;
-    font-family: 'Italiana', sans-serif;
+    font-family: var(--primary-font);
 }
 
 .btn::before,
@@ -565,7 +567,7 @@ body {
 /* .........................HERO GET TOUR TICKET....................... */
 .hero-text-ticket
 {
-    font-family: 'Italiana', sans-serif;
+    font-family: var(--primary-font);
 }
 .ticket-background 
 {
@@ -606,7 +608,7 @@ body {
 .ticket-btn span 
 {
     position: relative;
-    font-family: 'Italiana', sans-serif;
+    font-family: var(--primary-font);
     z-index: 1;
     font-weight: bolder;
 }
@@ -702,7 +704,7 @@ body {
 }
 
 .tasting-title {
-    font-family: 'Italiana', serif;
+    font-family: var(--primary-font);
     font-size: 2em;
     margin-bottom: 20px;
     text-align: center;
@@ -714,7 +716,7 @@ body {
 }
 
 .tasting-description {
-    font-family: 'Cormorant Infant', serif;
+    font-family: var(--secondary-font);
     font-size: 1.1em;
     color: #000000;
 }
@@ -731,7 +733,7 @@ body {
 .tastings-mein-title {
     font-size: 3em;
     margin-bottom: 40px;
-    font-family: 'Italiana', sans-serif;
+    font-family: var(--primary-font);
 }
 
 .tasting-event {
@@ -792,7 +794,7 @@ body {
 .view-date {
     text-align: center;
     margin-top: 20px;
-    font-family: 'Cormorant Infant', serif;
+    font-family: var(--secondary-font);
 }
 
 .view-date {
@@ -889,7 +891,7 @@ body {
 
 .about-me-text h1 {
     font-size: 2.5em;
-    font-family: 'Italiana', serif;
+    font-family: var(--primary-font);
     color: #333;
     margin-bottom: 20px;
 }
@@ -931,7 +933,7 @@ body {
     border: none;
     cursor: pointer;
     z-index: 1001;
-    position: absolute;
+    position: fixed;
     right: 20px; 
     top: 20px;
 }
@@ -1073,21 +1075,18 @@ body {
 
     .social-icons {
         display: none;
+        
     }
 
     .burger-menu {
         display: flex;
-        position: absolute;
-        right: 20px;
-        top: 20px;
     }
 
     .logo-container {
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 20px;
-        right: auto; 
+        right: auto; /* Ensure right positioning is reset */
     }
 }
 
@@ -1096,20 +1095,19 @@ body {
     .nav-page {
         display: none;
     }
-
+    .social-icons {
+        margin-top: 20px;
+        
+    }
     .burger-menu {
         display: flex;
-        position: absolute;
-        right: 20px;
-        top: 20px;
     }
 
     .logo-container {
-        position: absolute;
         left: 50%;
         transform: translateX(-50%);
         top: 20px;
-        right: auto; 
+        right: auto; /* Ensure right positioning is reset */
     }
 }
 .modal {
